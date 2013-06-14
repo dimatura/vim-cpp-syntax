@@ -11,11 +11,11 @@ syn keyword cppSTL		abort abs accumulate acos adjacent_difference adjacent_find 
 syn keyword cppMisc     Ptr ConstPtr
 syn keyword cppPCL      pcl PointXYZ PointXYZRGB PointCloud
 " TODO regex for Eigen types
-syn keyword cppEigen    Eigen Matrix MatrixXf MatrixXd Vector3f Vector3d Vector3i Vector2f Vector2f Vector2i VectorXf VectorXi VectorXd Map ArrayXd ArrayXf Isometry Rotation2D
+syn keyword cppEigen    Eigen Matrix MatrixXf MatrixXd Matrix4f Matrix4d Vector4f Vector4d Vector3f Vector3d Vector3i Vector2f Vector2f Vector2i VectorXf VectorXi VectorXd Map Array ArrayXd ArrayXf AngleAxis DiagonalMatrix EigenSolver Homogeneous JacobiSVD JacobiRotation Quaternion Rotation2D Sparse SparseMatrix SparseVector Stride Transform Affine2d Affine2f Affine3d Affine3f Isometry Isometry3d Projective Quaterniond Quaternionf RowVector3f RowVector3d RowVector2d RowVector2f
 syn keyword cppBoost    boost BOOST_FOREACH format
 syn keyword cppROS      ros sensor_msgs
 syn keyword cppDM       dm ca CA
-syn keyword cppCV       cv Mat Mat_ Point Point_ Size_ Vec Point3_ Vec_ Scalar Rect Range MatND SparseMat IplImage Point2f Point3f uchar Scalar_
+syn keyword cppCV       cv CvMat IplImage Mat Mat_ Matx Point Point_ Point3_ Point3i Point3d Point3f Point2f DataType Size_ Vec Point3_ Vec_ Scalar Rect Rect_ Range MatND SparseMat uchar Scalar Scalar_ Size Size_ TermCriteria
 
 " from stackoverflow for method names
 syn match    cCustomParen    "(" contains=cParen,cCppParen
